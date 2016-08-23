@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Liên Hệ</title>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<style>
+        #trans {
+            transition: border-radius 1s, -webkit-transform 1s;
+        }
+
+        #trans:hover {
+            -webkit-transform: rotate(360deg) scale(1, 1);
+            border-radius:50%;
+        }
+</style>
+</head>
+<body style="background-image:url(images/01.jpg)">
+<header class="contant" style="background-image:url(images/background.jpg)">
+	<div id="logo">
+		<img src="images/logo.png" id="trans"/>
+	</div>
+</header>
+<div id="menu" class="contant">
+	<ul>
+		<li><a href="index.html" title="">Trang chủ</a></li>
+		<li><a href="suckhoe.html" title="">sức khỏe</a></li>
+		<li><a href="danong.html" title="">đàn ông</a></li>
+		<li><a href="phunu.html" title="">phụ nữ</a></li>
+		<li><a href="tuvan.html" title="">tư vấn</a></li>
+		<li class="menu1"><a href="lienhe.html" title="">Liên hệ</a></li>
+	</ul>
+</div>
+<div id="page" class="contant">
+	<nav>
+		<div id="nav1">
+			<h4>Tư vấn trực tuyến</h4>
+			<div id="nav1-1">
+				<p>Cổng Thông Tin Trực Tuyến</p>
+				<p><img src="images/icon9.ico" width="26" height="30" id="trans"/>Chi Nhánh Hà Nội</p>
+				<p><img src="images/icon10.png" width="26" height="30" id="trans"/>Chi Nhánh Đà Nẵng</p>
+				<p><img src="images/icon10.png" width="26" height="30" id="trans"/>Chi Nhánh Cần Thơ</p>
+				<p><img src="images/icon9.ico" width="26" height="30" id="trans"/>Chi Nhánh HCM</p>
+				
+			</div>
+		</div>
+		<div id="nav1">
+			<h4>Địa chỉ liên hệ</h4>
+				<div id="nav1-1">
+					<p>Chi Nhánh Hà Nội:<br />
+						Số Điện thoại: (08)1234567<br />
+						Địa Chỉ: 42/42 Từ Liêm, Hà Nội
+					</p>
+					<p>Chi Nhánh Đà Nẵng:<br />
+						Số Điện thoại: (08)7654322<br />
+						54 Nguyễn Lương Bằng - Đà Nẵng
+					</p>
+					<p>Chi Nhánh Cần Thơ:<br />
+						Số Điện thoại: (08)12345666<br />
+						Ba Tháng Hai, Xuân Khánh, Ninh Kiều, Cần Thơ
+					</p>
+					<p>Chi Nhánh HCM:<br />
+						Số Điện thoại: (08)12345777<br />
+						42 Nguyễn Du, TPHCM
+					</p>
+				</div>
+		</div>
+	</nav>
+	<section>
+		<div id="section_form">
+			<div class="section_form_1" style="color:#000"><h2 style="text-align:center">Đăng Kí</h2>
+				<p>Các bạn điền đầy đủ thông tin vào bản đăng kí ở dưới để gửi thắc mắc cũng như theo dõi các bài viết mới nhất của chúng tôi</p>
+				<form id="form" method="get" action="">
+					<table width="100%" cellspacing="10" cellpadding="10">
+						<tr>
+							<td>Tên đầy đủ: </td>
+							<td><input name="tendn" type="text" placeholder="Mời nhập họ tên" style="width:351px;"></td>
+						</tr>
+						<tr>
+							<td>Quê Quán: </td>
+							<td colspan="2"><input list="browsers" name="quequan" placeholder="Mời chọn 1 tỉnh thành" style="width:351px;"/>
+								<datalist id="browsers">
+									<option value="Hà Nội"/>
+									<option value="Huế"/>
+									<option value="Đà Nẵng"/>
+									<option value="Nha Trang"/>
+									<option value="TPHCM"/>
+								</datalist>
+							</td>
+						</tr>
+						<tr>
+							<td>Tuổi tác: </td>
+							<td><input type="range" min="10" max="80" style="width:353px;" value="18" />
+						</tr>
+						<tr>
+							<td>Số điện thoại: </td>
+							<td><input type="text" name="sdt" placeholder="Mời nhập số điện thoại" style="width:351px;" />
+						</tr>
+						<tr>
+							<td>Một cộng hai bằng mấy? </td>
+							<td><input type="text" name="math" placeholder="Trả lời câu hỏi" style="width:351px;" />
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<input type="reset" name="button2" id="button2" value="Hủy" />
+								<input type="submit" name="button" id="button" value="Đồng Ý" onclick="form1()" />
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</section>
+	<aside>
+		<script type="text/javascript" src="js/js.js"></script>
+		<div id="googleMap" style="width: 340px; height: 650px;">Google Map</div>
+	</aside>
+		</div>
+<footer>
+<p>Mọi thắc mắc xin liên lạc số Điện Thoại: 0901234567</p>
+	<p>hoặc gửi mail về hộp thư: abc@gmail.com</p>
+	<div>
+		<a href="https://www.facebook.com/"><img src="images/iconfb.png" width="50" height="50" id="trans"/></a>
+		<a href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1"><img src="images/icon-gmail.png" width="50" height="55" id="trans"/></a>
+		<a href="https://twitter.com/?lang=vi"><img src="images/iconwt.png"width="50" height="50" id="trans"/></a>
+	</div>
+	<p>Sản phẩm assignment của Khánh Thuận</p>
+</footer>
+</body>
+</html>
